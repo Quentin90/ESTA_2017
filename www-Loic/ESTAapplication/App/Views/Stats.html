@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="../../Assets/image/ico.png" />
+        <script src="../../Assets/js/Affichage.js" type="text/javascript" LANGUAGE="JavaScript"></script>
+        <link rel="stylesheet" href="../../Assets/css/Affichage.css" />
+    </head>
+</head>
+<body style="margin-top: 50px">
+<div class="fixed-nav-bar">
+    <a id="btnID3" href="../../index.php" style="text-decoration:none;">Retour</a><button id="btnID2" onclick="scrollbot()">v</button><button id="btnID2" onclick="scrolltop()">^</button>
+</div>
+
+<br>
+<FORM id="stats">
+    <br>
+    Sexe :
+    <SELECT name="sexe_etudiant" size="1">
+        <OPTION selected>-
+        <OPTION>F
+        <OPTION>M
+    </SELECT>
+    <br>
+    Boursier :
+    <SELECT name="boursier_etudiant" size="1">
+        <OPTION selected>-
+        <OPTION>OUI
+    </SELECT>
+    <br>
+    Type de Bac :
+    <SELECT name="nom_bac_etudiant" size="1">
+        <OPTION selected>-
+        <OPTION>STI2D
+        <OPTION>STL
+        <OPTION>SVT
+        <OPTION>T S
+    </SELECT>
+    <br>
+    Ecole bac+2 :
+    <SELECT name="nom_bacplus2_etudiant" size="1">
+        <OPTION selected>-
+        <OPTION>OUI
+        <OPTION>NON
+
+    </SELECT>
+</FORM>
+
+<button onclick="stats()">Chercher</button>
+
+<table id="main_tab" class="container"></table>
+
+</body>
+</html>

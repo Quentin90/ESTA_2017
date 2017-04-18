@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+
+<div>
+    <label> Associer un groupe à un professeur : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/J_GROUPE_PROFESSEUR_Add.php">
+    <div id="formulaire">
+        <label> Groupe : </label>
+        <input id="groupe"  name="groupe" onblur="VerifierChamps_GroupeProfesseur()">
+        <sub id="message_groupe"></sub>
+        <br>
+        <label> Nom professeur : </label>
+        <input id="nom_professeur"  name="nom_professeur" onblur="VerifierChamps_GroupeProfesseur()">
+        <sub id="message_nom_professeur"></sub>
+        <br>
+    </div>
+    <button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+</select>
+</td>
+</tr>
+</table>
+</td>
+<div id="10">
+    <td>
+    <table>
+        <tr>
+            <td>
+                <button onclick="swap('Champ1','Champ2')"> Deplacer &gt </button>
+            </td>
+        </tr>
+
+
+
+
+        <tr>
+            <td>
+                <button onclick="swap('Champ2','Champ1')"> &lt Deplacer  </button>
+            </td>
+        </tr>
+
+
+
+    </table>
+
+</td>
+
+<td>
+    <label> Liste des champs à afficher : </label>
+
+    <table>
+        <tr>
+            <td>
+                <select id="affiche_champs" name="Champ2" multiple="multiple" ondblclick="swap('Champ2','Champ1')" onload="Changer_selection_Tables()">
+                </select>
+            </td>
+
+        </tr>
+
+    </table>
+
+</td>
+</table>
+<button type="submit" onclick="Recupere_champsAffichage()" >  Valider </button>
+<div id="ok">
+</div>
+</div>

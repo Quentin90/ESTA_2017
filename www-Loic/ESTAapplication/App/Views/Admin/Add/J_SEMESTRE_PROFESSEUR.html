@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+
+<div>
+    <label> Associé un Professeur à un semestre : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/J_SEMESTRE_PROFESSEUR_Add.php">
+    <div id="formulaire">
+        <label> Semestre : </label>
+        <input id="semestre"  name="semestre" onblur="VerifierChamps_SemestreProfesseur()">
+        <sub id="message_semestre"></sub>
+        <br>
+        <label> Nom professeur : </label>
+        <input id="nom_professeur"  name="nom_professeur" onblur="VerifierChamps_SemestreProfesseur()">
+        <sub id="message_nom_professeur"></sub>
+        <br>
+    </div>
+    <button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

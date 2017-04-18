@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+        <label> Ajouter un Bac + 2 : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/BacPlus2_Add.php">
+    <div id="formulaire">
+    <label> Nom du BAC plus 2 : </label>
+    <input id="nom_bacPlus2" name="nom_bacPlus2" onblur="VerifierChamps_BacPlus2()">
+        <sub id="message_nom_bacPlus2"></sub>
+        <br>
+    <label> option du BAc plus 2 : </label>
+    <input id="option_bacPlus2" name="option_bacPlus2" onblur="VerifierChamps_BacPlus2()">
+        <sub id="message_option_bacPlus2"></sub>
+        <br>
+    <label> annee du BAC plus 2 : </label>
+    <input id="annee_bacPlus2" name="annee_bacPlus2" onblur="VerifierChamps_BacPlus2()">
+        <sub id="message_annee_bacPlus2"></sub>
+        <br>
+    <label> Nombre d'étudiants : </label>
+    <input id="nombre_etudiants" name="nombre_etudiants" onblur="VerifierChamps_BacPlus2()">
+        <sub id="message_nombre_etudiants"></sub>
+        <br>
+    </div>
+
+<button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

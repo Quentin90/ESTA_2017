@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+
+<div>
+    <label> Ajouter un semestre : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/J_ETUDIANT_GROUPE_Add.php">
+    <div id="formulaire">
+        <label> Nom Etudiant : </label>
+        <input id="nom_etudiant"  name="nom_etudiant" onblur="VerifierChamps_EtudiantsGroupe()">
+        <sub id="message_nom_etudiant"></sub>
+        <br>
+        <label> Groupe : </label>
+        <input id="nom_groupe"  name="nom_groupe" onblur="VerifierChamps_EtudiantsGroupe()">
+        <sub id="message_nom_groupe"></sub>
+        <br>
+    </div>
+    <button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

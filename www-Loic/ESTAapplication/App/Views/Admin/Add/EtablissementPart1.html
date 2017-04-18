@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label>Ajouter un Etablissement : </label>
+    <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Etablissement_Add.php">
+    <div id="formulaire">
+    <label> Catégorie Etablissement : </label>
+    <select id="categorie_etablissement" name="categorie_etablissement" onblur="VerifierChamps_Etablissement()"> <option> - </option>

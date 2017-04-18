@@ -1,0 +1,294 @@
+/*	
+	Side Navigation Menu V2, RWD
+	===================
+	License:
+	http://goo.gl/EaUPrt
+	===================
+	Author: @PableraShow
+
+ */
+
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1.42em;
+  color:black;
+  /*background-image:url('../image/test.png');*/
+
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #564092; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+button {
+    background-color: #3366CC; /* Green */
+    border: none;
+    color: white;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3px;
+
+
+}
+.button {
+    background-color: #3366CC; /* Green */
+    border: none;
+    color: white;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 3px;
+
+
+}
+
+
+.formulaire{
+
+    border-color: #14063A;
+
+    border-style: outset;
+    border-width: 3px;
+    padding: 10px;
+    display: inline;
+    margin: 5px;
+
+
+}
+
+.formulaire2{
+
+    border-color: #14063A;
+
+    border-style: outset;
+    border-width: 3px;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+
+}
+button:hover {
+
+
+    box-shadow: #564092 -1px 1px, #564092 -2px 2px, #564092 -3px 3px, #564092 -4px 4px, #564092 -5px 5px, #564092 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+#change {
+    background-color: #eb6109; /* Green */
+
+
+
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1 {
+  font-size:3em; 
+  font-weight: 300;
+  line-height:1em;
+  text-align: center;
+  color: #4DC3FA;
+}
+
+h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 2em;
+  color: white;
+}
+
+h2 a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+.container th h1 {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #3366CC;
+}
+
+.container td {
+	  font-weight: normal;
+	  font-size: 13px;
+        max-width: 200px;
+
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+
+}
+#wrap{
+}
+
+.container {
+	  text-align: left;
+	  overflow: hidden;
+
+	  margin: 0 auto;
+  display: table;
+}
+
+.container td, .container th {
+
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+	  background-color: #b2b2b2;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+	  background-color: #e0e0e0;
+}
+
+#btnID{
+    height: 50px;
+    display: block;
+}
+#btnID2{
+    height: 50px;
+    right: 0px;
+    top: 0px;
+    float: right;
+    display: block;
+    border-color: #14063A;
+    border-style: ridge;
+    border-width: 3px;
+
+    background-color:#eb6109 ;
+}
+
+#test{
+    height: 50px;
+}
+#btnID3{
+    height: 43px;
+    left: 0px;
+    top: 0px;
+    float: left;
+    display: block;
+    background-color: #eb6109;
+    text-align: end;
+    font-family:'Montserrat', sans-serif;
+    font-size: 27px;
+    color: black;
+    border-color: #14063A;
+    border-style: ridge;
+    border-width: 3px;
+
+}
+p{
+
+    height: 191px;
+    width: 364px;
+
+    background-image: url("../image/logo.png");
+}
+
+.container th {
+	  background-color: #b2b2b2;
+}
+
+.container td:first-child { color: black; }
+
+.container tr:hover {
+   background-color: #3366CC;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
+	        box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+
+
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: #3366CC;
+}
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+    font-size: 2em;
+}
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+    width:800px;
+    overflow:visible;
+}
+
+.main-menu {
+    background:grey;
+    border-right:1px solid #e5e5e5;
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    left:0;
+    width:60px;
+    overflow:hidden;
+
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1000;
+}
+
+.main-menu>ul {
+    margin:7px 0;
+}
+.main-menu>ul>li{
+    list-style: none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+<div>
+    <label> Ajouter un étudiant : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/Etudiant_Add.php">
+        <div id="formulaire">
+            <label> Nom de l'étudiant : </label>
+            <input id="nom_etudiant" name="nom_etudiant" onblur="VerifierChamps_Etudiant()" >
+            <sub id="message_nom_etudiant"></sub>
+            <br>
+            <label> Prénom de l'étudiant : </label>
+            <input id="prenom_etudiant" name="prenom_etudiant" onblur="VerifierChamps_Etudiant()">
+            <sub id="message_prenom_etudiant"></sub>
+            <br>
+            <label> Semestre : </label>
+            <select id="semestre" name="semestre" onblur="VerifierChamps_Etudiant()">
+                <option> - </option>

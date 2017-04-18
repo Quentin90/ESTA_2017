@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label id="text_entree"> Ajouter un ancien élève : </label>
+    <br>
+    </div>
+    <form action="../../../App/Controller/Admin/Ancien_Eleve_Add.php" method="POST">
+    <div id="formulaire">
+        <br>
+        <label> Date de mise à jour : </label>
+        <input id="date_maj" name="date_maj" onblur="VerifierChamps_AncienEleve()"> <sub id="message_date_maj"></sub>
+        <br>
+        <label> Diplômé : </label>
+            <select id="diplome" name="diplome" onblur="VerifierChamps_AncienEleve()">
+                <option> - </option>
+                <option> Oui </option>
+                <option> Non </option>
+            </select><sub id="message_diplome"> </sub>
+        <br>
+        <label> Nom de l'ancien élève : </label>
+            <input id="nom_ancien_eleve" name="nom_ancien_eleve" onblur="VerifierChamps_AncienEleve()"> <sub id="message_nom"> </sub>
+        <br>
+        <label> Prénom de l'ancien élève : </label>
+            <input id="prenom_ancien_eleve" name="prenom_ancien_eleve" onblur="VerifierChamps_AncienEleve()"> <sub id="message_prenom"> </sub>
+        <br>
+        <label> 2A2E : </label>
+            <select id="2A2E" name="2A2E" onblur="VerifierChamps_AncienEleve()">
+                <option> - </option>
+                <option> Oui </option>
+                <option> Non </option>
+            </select>
+        <sub id="message_2A2E"></sub>
+        <br>
+        <label> Compte linkedin : </label>
+            <input id="compte_linkedin" name="compte_linkedin" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_compte_linkedin"></sub>
+        <br>
+        <label> Nom marital : </label>
+            <input id="nom_marital" name="nom_marital" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_nom_marital"></sub>
+        <br>
+        <label> Date de sortie Promo BAC + 4 : </label>
+            <input id="date_promo_bac4" name="date_promo_bac4" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_date_promo4"></sub>
+        <br>
+        <label> Date de sortie Promo BAC + 5 : </label>
+            <input id="date_promo_bac5" name="date_promo_bac5" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_date_promo5"></sub>
+        <br>
+        <label> Portable de l'ancien élève : </label>
+            <input id="portable_ancien_eleve" name="portable_ancien_eleve" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_portable_ancien_eleve"></sub>
+        <br>
+        <label> Téléphone fixe de l'ancien élève : </label>
+            <input id="telephone_fixe_ancien_eleve" name="telephone_fixe_ancien_eleve" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_telephone_ancien_eleve"></sub>
+        <br>
+        <label> mail de l'ancien élève : </label>
+            <input id="mail_ancien_eleve" name="mail_ancien_eleve" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_mail_ancien_eleve"></sub>
+        <br>
+        <label> Commentaires : </label>
+            <input id="commentaires" name="commentaires" onblur="VerifierChamps_AncienEleve()">
+            <sub id="message_commentaires"></sub>
+        <br>
+        <label> Poste occupé : </label>
+            <input id="poste_occupe" name="poste_occupe" onblur="VerifierChamps_AncienEleve()">
+        <sub id="message_poste_occupe"></sub>
+        <br>
+        <label> Catégorie de poste occupé : </label>
+            <select id="categorie_poste" name="categorie_poste" onblur="VerifierChamps_AncienEleve()">
+                <option> - </option>
+

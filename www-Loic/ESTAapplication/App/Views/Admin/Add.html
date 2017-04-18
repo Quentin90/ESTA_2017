@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ajouter BDD</title>
+    <script src="../../../Assets/js/Add.js" type="text/javascript" LANGUAGE="JavaScript"></script>
+    <script src="../../../Assets/js/Affichage.js" type="text/javascript" LANGUAGE="JavaScript"></script>
+
+    <script src="../../../Assets/js/Add/Formulaire.js" type="text/javascript" LANGUAGE="JavaScript">
+    </script>
+
+    <link rel="stylesheet" href="../../../Assets/css/Affichage.css" />
+
+</head>
+<body>
+<br>
+<br>
+<br><br><br>
+<button onclick="afficheHistorique()"> Historique </button><button onclick="updateBDD()">Mettre a jour la BDD</button>
+<br>
+<table id="main_table" class="container"></table>
+<br>
+<div class="formulaire">
+<label> Séléctionner une Table : </label>
+
+    <select id="table_select">
+        <option value="0"></option>
+        <option> Ancien_Eleve </option>
+        <option> Association_Etudiante </option>
+        <option> Baccalaureat </option>
+        <option> Bacplus2 </option>
+        <option> Contact </option>
+        <option> Delegue </option>
+        <option> Entreprise </option>
+        <option> Etablissement </option>
+        <option> Etudiant </option>
+        <option> Groupe </option>
+        <option> Parents </option>
+        <option> Permanent </option>
+        <option> Professeur </option>
+        <option> Semestre </option>
+        <option> Stage </option>
+        <option> EntreSortie </option>
+        <option> J_ETUDIANT_GROUPE </option>
+        <option> J_SEMESTRE_PROFESSEUR </option>
+        <option> J_GROUPE_PROFESSEUR </option>
+        <option> J_BACCALAUREAT_ETABLISSEMENT </option>
+        <option> J_BACPLUS2_ETABLISSEMENT </option>
+
+
+
+    </select>
+<label> Pour l'opération : </label>
+<select id="operation_select">
+    <option></option>
+    <option>Ajouter</option>
+    <option>Modifier</option>
+    <option>Supprimer</option>
+</select>
+<button onclick="Selection_Table()"> Valider </button>
+</div>
+<br>
+<br>
+<div id="form" style='display:inline'> </div>
+</body>
+</html>

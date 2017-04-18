@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+
+<div>
+    <label> Asoccier un bac + 2 à un établissement : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/J_BACPLUS2_ETABLISSEMENT_Add.php">
+    <div id="formulaire">
+        <label> BacPlus2 : </label>
+        <input id="nom_bacplus2"  name="nom_bacplus2" onblur="VerifierChamps_Bacplus2Etablissement()">
+        <sub id="message_nom_bacplus2"></sub>
+        <br>
+        <label> Nom etablissement : </label>
+        <input id="nom_etablissement"  name="nom_etablissement" onblur="VerifierChamps_Bacplus2Etablissement()">
+        <sub id="message_nom_etablissement"></sub>
+        <br>
+    </div>
+    <button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

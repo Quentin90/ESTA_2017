@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter un Contact : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Contact_Add.php">
+    <div id="formulaire">
+    <label> Nom contact : </label>
+    <input id="nom_contact" name="nom_contact" onblur="VerifierChamps_Contacts()">
+        <sub id="message_nom_contact"></sub>
+        <br>
+    <label> Prénom contact : </label>
+    <input id="prenom_contact" name="prenom_contact" onblur="VerifierChamps_Contacts()">
+        <sub id="message_prenom_contact"></sub>
+        <br>
+    <label> Date de mise à jour : </label>
+    <input id="date_maj" name="date_maj" onblur="VerifierChamps_Contacts()">
+        <sub id="message_date_maj"></sub>
+        <br>
+    <label> Genre du contact : </label>
+    <select id="genre_contact" name="genre_contact" onblur="VerifierChamps_Contacts()">
+        <option> - </option>
+        <option> Madame </option>
+        <option> Monsieur </option>
+    </select>
+        <sub id="message_genre_contact"></sub>
+        <br>
+    <label> Fonction contact : </label>
+    <input id="fonction_contact" name="fonction_contact" onblur="VerifierChamps_Contacts()">
+        <sub id="message_fonction_contact"></sub>
+        <br>
+    <label> Portable contact : </label>
+    <input id="protable_contact" name="protable_contact" onblur="VerifierChamps_Contacts()">
+        <sub id="message_portable_contact"></sub>
+        <br>
+    <label> Mail contact : </label>
+    <input id="mail_contact" name="mail_contact" onblur="VerifierChamps_Contacts()">
+        <sub id="message_mail_contact"></sub>
+        <br>
+    <label> Observation : </label>
+    <input id="observations" name="observations" onblur="VerifierChamps_Contacts()">
+        <sub id="message_observations"></sub>
+        <br>
+        <label> Nom de l'établissement: </label>
+        <input id="nom_etablissement" name="nom_etablissement" onblur="VerifierChamps_Contacts()">
+        <sub id="message_nom_etablissement"></sub>
+        <br>
+    <label> Travail dans l'entreprise : </label>
+    <input id="nom_entreprise" name="nom_entreprise" onblur="VerifierChamps_Contacts()">
+        <sub id="message_nom_entreprise"></sub>
+        <br>
+    </div>
+<button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

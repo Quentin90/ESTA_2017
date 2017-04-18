@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+<div>
+<label>
+    Ajouter une association étudiante :
+</label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/AssociationEtudiante_Add.php">
+<div id="formulaire">
+    <label> Nom Association : </label>
+    <input id="nom_association" name="nom_association" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_association"></sub>
+    <br>
+    <label> Nom Président : </label>
+    <input id="nom_president" name="nom_president" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_president"></sub>
+    <br>
+    <label> Nom Vice Président : </label>
+    <input id="nom_vicePresident" name="nom_vicePresident" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_vicePresident"></sub>
+    <br>
+    <label> Nom Secretaire : </label>
+    <input id="nom_secretaire" name="nom_secretaire" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_secretaire"></sub>
+    <br>
+    <label> Nom Vice Secretaire : </label>
+    <input id="nom_viceSecretaire" name="nom_viceSecretaire" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_viceSecretaire"></sub>
+    <br>
+    <label> Nom Trésorier : </label>
+    <input id="nom_tresorier" name="nom_tresorier" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_tresorier"></sub>
+    <br>
+    <label> Nom Vice Trésorier : </label>
+    <input id="nom_viceTresorier" name="nom_viceTresorier" onblur="VerifierChamps_Association_Etudiante()">
+    <sub id="message_nom_viceTresorier"></sub>
+    <br>
+</div>
+<button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

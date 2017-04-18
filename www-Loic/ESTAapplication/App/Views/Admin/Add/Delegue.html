@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+<div>
+    <label>
+        Ajouter un délégué :
+        <br>
+    </label>
+</div>
+<form method="post" action="../../../App/Controller/Admin/Delegue_Add.php">
+<div id="formulaire">
+    <label> Nom délégué : </label>
+    <input id="nom_delegue" name="nom_delegue" onblur="VerifierChamps_Delegue()">
+    <sub id="message_nom_delegue"></sub>
+    <br>
+    <label> Année délégué : </label>
+    <input id="annee_delegue" name="annee_delegue" onblur="VerifierChamps_Delegue()">
+    <sub id="message_annee_delegue"></sub>
+    <br>
+    <label> Semestres Délégué : </label>
+    <input id="semestres" name="semestres" onblur="VerifierChamps_Delegue()">
+    <sub id="message_semestres"></sub>
+    <br>
+</div>
+<button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>

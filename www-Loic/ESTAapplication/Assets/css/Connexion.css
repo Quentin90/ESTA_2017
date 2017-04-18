@@ -1,0 +1,60 @@
+.portail{
+    color: #281758;
+    font-family: "AR DESTINE";
+    font-size: 35px;
+    display: block;
+}
+.formulaire{
+    display: block;
+    height: 200px;
+    width: 500px;
+    margin-top: 180px;
+    margin-left: 70px;
+    border-color: #14063A;
+    border-radius: 20px;
+    border-style: double;
+    border-width: 3px;
+}
+
+p{
+
+    height: 512px;
+    width: 512px;
+
+    background-image: url("../image/ESTA.png");
+}
+.login{
+    padding-top: 20px;
+    color: #FF7400;
+    font-family: "AR BERKLEY";
+    font-size: 25px;
+    padding-left: 40px;
+    display: block;
+    padding-bottom: 20px;
+}
+.mdp{
+    font-size: 25px;
+    font-family: "AR BERKLEY";
+    color: #FF7400;
+    padding-left: 40px;
+    display: block;
+    padding-bottom: 20px;
+
+}
+.valider{
+    background-color: transparent;
+    color: #14063A;
+    display: block;
+    width: 20%;
+    margin: auto;
+    border-style: double;
+    border-width: 3px;
+}
+
+input{
+    border-style: double;
+    border-width: 3px;
+    border-radius: 5px;
+    color: #14063A;
+}
+

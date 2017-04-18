@@ -1,0 +1,34 @@
+label {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #F06D00;
+    display:block;
+    width: 250px;
+    float: left;
+}
+div{
+    margin-top: 30px;
+    display: block;
+    float: left;
+}
+
+sub{
+    color: red;
+    display: block;
+    float: right;
+}
+
+#valider{
+    margin-top: 20px;
+    margin-left: 500px;
+    border-radius: 3px;
+}
+
+#formulaire{
+
+    border: double;
+    border-radius: 5px;
+    border-color:#130630;
+    margin-left: 50px;
+    padding: 30px;
+}
+

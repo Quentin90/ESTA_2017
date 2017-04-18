@@ -1,0 +1,60 @@
+
+
+li{
+    display: block;
+    float: left;
+    background-color: #130630;
+    font-family: "AR DESTINE";
+    color: white;
+    padding: 14px 16px;
+
+}
+
+#selection_pole{
+    margin-top: 200px;
+   color: blue;
+    margin-left: 300px;
+    font-family: "AR BLANCA";
+}
+#poles{
+
+    color: white;
+    background-color: gray;
+
+}
+
+#valide_pole{
+
+    border-radius: 10px;
+
+}
+
+#selection_table{
+    margin-top: 200px;
+    color: blue;
+    margin-left: 300px;
+    font-family: "AR BLANCA";
+}
+
+#table1{
+    border-radius: 10px;
+
+}
+
+#table2{
+    border-radius: 10px;
+    width:150px;
+    height: 150px;
+    margin-left: 30px;
+}
+
+#buton{
+
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+td {
+    border: 1px double black;
+}
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+        <label> Ajouter une Entreprise : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Entreprise_Add.php">
+    <div id="formulaire">
+    <label> Date de mise à jour : </label>
+    <input id="date_maj"  name="date_maj" onblur="VerifierChamps_Entreprise()">
+        <sub id="message_date_maj"></sub>
+        <br>
+    <label> Nom de l'entreprise : </label>
+    <input id="nom_entreprise"  name="nom_entreprise" onblur="VerifierChamps_Entreprise()">
+        <sub id="message_nom_entreprise"></sub>
+        <br>
+    <label> Type d'entreprise : </label>
+    <select id="type_entreprise"  name="type_entreprise" onblur="VerifierChamps_Entreprise()"> <option> - </option>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">    <title>ESTA</title>
+    <link rel="icon" type="image/png" href="Assets/image/ico.png" />
+    <script src="Assets/js/Affichage.js" type="text/javascript" LANGUAGE="JavaScript"></script>
+    <link rel="stylesheet" href="Assets/css/Affichage.css" />
+
+    <nav>
+
+    </nav>
+</head>
+<body>
+<br>
+<div class="fixed-nav-bar">
+<a id="btnID3" href="App/Controller/Admin/Session.php" style="text-decoration:none;">Connexion</a><a id="btnID3" href="App/Views/Stats.html" style="text-decoration:none;">Stats</a><button id="btnID2" onclick="scrollbot()">v</button><button id="btnID2" onclick="scrolltop()">^</button>
+
+</div>
+
+<p></p>
+<!--<div class="area"></div><nav class="main-menu">-->
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<i class="fa fa-home fa-2x"></i>-->
+                <!--<span class="nav-text">-->
+                            <!--Dashboard-->
+                        <!--</span>-->
+            <!--</a>-->
+
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<i class="fa fa-home fa-2x"></i>-->
+                <!--<span class="nav-text">-->
+
+                        <!--</span>-->
+            <!--</a>-->
+
+        <!--</li>-->
+        <!--<li class="has-subnav">-->
+            <!--<a href="#">-->
+                <!--<span class="nav-text">-->
+                                <!--<div class="formulaire">-->
+                    <!--<label id="selection_pole"> Veuillez selectionner une action :  </label>-->
+                    <!---->
+                    <!--<select id="selection">-->
+                        <!--<option>Exporter</option>-->
+                        <!--<option>Visualiser</option>-->
+                    <!--</select>-->
+                    <!---->
+                    <!--<button id="valider_choix" onclick="Selection_Action()">Valider</button>-->
+                    <!--<button id="change" onclick="Changer_Selection_Choix()">Changer</button>-->
+                 <!--</div>-->
+                <!--</span>-->
+            <!--</a>-->
+
+        <!--</li>-->
+
+        <!--<li class="has-subnav">-->
+            <!--<a href="#">-->
+                <!--<i class="fa fa-laptop fa-2x"></i>-->
+                <!--<span class="nav-text">-->
+                <!--</span>-->
+            <!--</a>-->
+
+        <!--</li>-->
+
+    <!--</ul>-->
+
+<!--<input id="fichier" type="text" name="fichier">-->
+<!--<button onclick="file()">Chemin du fichier .CSV</button><br><br>-->
+
+
+<form method="post" action="App/Controller/fileToBDD.php" enctype="multipart/form-data">
+
+    <input type="file" name="mon_fichier" id="mon_fichier" /><br />
+    <input class="button" type="submit" name="submit" value="Envoyer" />
+
+</form>
+<br>
+<div class="formulaire">
+<label id="selection_pole"> Veuillez selectionner une action :  </label>
+
+<select id="selection">
+    <option>Exporter</option>
+    <option>Visualiser</option>
+</select>
+
+<button id="valider_choix" onclick="Selection_Action()">Valider</button>
+<button id="change" onclick="Changer_Selection_Choix()">Changer</button>
+    </div>
+<br>
+<br>
+<div id='choix' style='display:inline'>
+
+</div>
+
+<div id="main_tab" class="container"></div>
+
+</body>
+</html>

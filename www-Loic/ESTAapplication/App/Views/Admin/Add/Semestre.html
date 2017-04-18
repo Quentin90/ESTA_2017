@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter un semestre : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Semestre_Add.php">
+    <div id="formulaire">
+    <label> Semestre : </label>
+    <input id="semestre"  name="semestre" onblur="VerifierChamps_Semestre()">
+        <sub id="message_semestre"></sub>
+        <br>
+    <label> nombre d'étudiants : </label>
+    <input id="nombre_etudiant"  name="nombre_etudiant" onblur="VerifierChamps_Semestre()">
+        <sub id="message_nombre_etudiant"></sub>
+        <br>
+    </div>
+<button id="valider" type="submit"> Valider </button>
+    </form>
+</body>
+</html>

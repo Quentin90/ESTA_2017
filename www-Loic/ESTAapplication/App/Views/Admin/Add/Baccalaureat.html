@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter un Baccalauréat : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Baccalaureat_Add.php">
+    <div id="formulaire">
+    <br>
+    <label> Annee obtention BAC : </label>
+    <input id="annee_obtention_BAC" name="annee_obtention_BAC" onblur="VerifierChamps_Baccalaureat()">
+        <sub id="message_annee_obtention_BAC"></sub>
+    <br>
+    <label> Nom BAC : </label>
+    <input id="nom_BAC" name="nom_BAC" onblur="VerifierChamps_Baccalaureat()">
+        <sub id="message_nom_BAC"></sub>
+    <br>
+    <label> Mention obtenu : </label>
+    <select id="mention_obtenu" name="mention_obtenu" onblur="VerifierChamps_Baccalaureat()">
+        <option> - </option>
+        <option> Passable </option>
+        <option> Assez bien </option>
+        <option> Bien </option>
+        <option> Très bien </option>
+        <option> Excelent </option>
+    </select>
+        <sub id="message_mention_obtenu"></sub>
+    <br>
+    <label> Option BAC </label>
+    <input id="option_BAC" name="option_BAC" onblur="VerifierChamps_Baccalaureat()">
+        <sub id="message_option_BAC"></sub>
+    <br>
+    <label> Nombre d'étudiant : </label>
+    <input id="nombre_etudiant" name="nombre_etudiant" onblur="VerifierChamps_Baccalaureat()">
+        <sub id="message_nombre_etudiant"></sub>
+    <br>
+    </div>
+<button id="valider" type="submit"> Valider </button>
+    </form>
+</body>
+</html>

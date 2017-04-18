@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter les parents : </label>
+    <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Parent_Add.php">
+    <div id="formulaire">
+    <label> Nom des parents : </label>
+    <input id="nom_parents" name="nom_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_nom_parents"></sub>
+        <br>
+    <label> Prénom des parents : </label>
+    <input id="prenom_parents" name="prenom_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_prenom_parents"></sub>
+        <br>
+    <label> Genre parents : </label>
+    <select id="genre_parents" name="genre_parents" onblur="VerifierChamps_Parents()">
+        <option> - </option>
+        <option> Madame Monsieur </option>
+        <option> Monsieur </option>
+        <option> Madame </option>
+    </select>
+        <sub id="message_genre_parents" ></sub>
+        <br>
+    <label> Adresse des parents : </label>
+    <input id="adresse_parents" name="adresse_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_adresse_parents"></sub>
+        <br>
+    <label> Code postal des parents : </label>
+    <input id="code_postal_parents" name="code_postal_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_code_postal_parents"></sub>
+        <br>
+    <label> Ville des parents : </label>
+    <input id="ville_parents" name="ville_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_ville_parents"></sub>
+        <br>
+    <label> Pays des parents : </label>
+    <input id="pays_parents" name="pays_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_pays_parents"></sub>
+        <br>
+    <label> Téléphone fixe des parents : </label>
+    <input id="telephone_parents" name="telephone_parents" onblur="VerifierChamps_Parents()">
+        <sub id="message_telephone_parents"></sub>
+        <br>
+    <label> Portable de la mère : </label>
+    <input id="portable_mere" name="portable_mere" onblur="VerifierChamps_Parents()">
+        <sub id="message_portable_mere"></sub>
+        <br>
+    <label> Profession de la mère : </label>
+    <input id="profession_mere" name="profession_mere" onblur="VerifierChamps_Parents()">
+        <sub id="message_profession_mere"></sub>
+        <br>
+    <label> Entreprise de la mère : </label>
+    <input id="entreprise_mere" name="entreprise_mere" onblur="VerifierChamps_Parents()">
+        <sub id="message_entreprise_mere"></sub>
+        <br>
+    <label> Portable du père : </label>
+    <input id="portable_pere" name="portable_pere" onblur="VerifierChamps_Parents()">
+        <sub id="message_protable_pere"></sub>
+        <br>
+    <label> Profession du père : </label>
+    <input id="profession_pere" name="profession_pere" onblur="VerifierChamps_Parents()">
+        <sub id="message_profession_pere"></sub>
+        <br>
+    <label> Entreprise du père : </label>
+    <input id="entreprise_pere" name="entreprise_pere" onblur="VerifierChamps_Parents()">
+        <sub id="message_entreprise_pere"></sub>
+        <br>
+    <label> Diplômé : </label>
+    <select id="diplome" name="diplome" onblur="VerifierChamps_Parents()">
+        <option value="0"> - </option>
+        <option> La mère </option>
+        <option> Le père </option>
+        <option> Les deux </option>
+    </select>
+        <sub id="message_diplome"></sub>
+        <br>
+    </div>
+<button id="valider" type="submit"> Valider </button>
+    </form>
+</body>
+</html>

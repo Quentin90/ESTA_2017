@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter un stage : </label>
+    <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Stage_Add.php">
+    <div id="formulaire">
+        <label> Intitulé du stage : </label>
+        <input id="intitulé_stage"  name="intitulé_stage" onblur="VerifierChamps_Stage()">
+        <sub id="message_intitulé_stage"></sub>
+        <br>
+    <label> Année du stage : </label>
+    <input id="annee_stage"  name="annee_stage" onblur="VerifierChamps_Stage()">
+        <sub id="message_annee_stage"></sub>
+        <br>
+    <label>Mission du stage : </label>
+    <input id="mission_stage" name="mission_stage" onblur="VerifierChamps_Stage(")>
+        <sub id="message_mission_stage"></sub>
+        <br>
+    <label> Objectif du stage : </label>
+    <input id="objectif_stage" name="objectif_stage" onblur="VerifierChamps_Stage()">
+        <sub id="message_objectif_stage"></sub>
+        <br>
+    <label> Responsabilités : </label>
+    <input id="responsabilites" name="responsabilites" onblur="VerifierChamps_Stage()">
+        <sub id="message_responsabilites"></sub>
+        <br>
+    <label> Dates de stage : </label>
+    <input id="dates_stage" name="dates_stage" onblur="VerifierChamps_Stage()">
+        <sub id="message_dates_stage"></sub>
+        <br>
+    <label> Indemnité : </label>
+    <input id="indemnite" name="indemnite" onblur="VerifierChamps_Stage()">
+        <sub id="message_indemnite"></sub>
+        <br>
+    <label> Stage de Semestre : </label>
+    <input id="stage_semestre" name="stage_semestre" onblur="VerifierChamps_Stage()">
+        <sub id="message_stage_semestre"></sub>
+        <br>
+    <label> Responsable ESTA : </label>
+    <input id="responsable_ESTA" name="responsable_ESTA" onblur="VerifierChamps_Stage()">
+        <sub id="message_responsable_ESTA"></sub>
+        <br>
+    <label> Nom de l'étudiant : </label>
+    <input id="nom_etudiant" name="nom_etudiant" onblur="VerifierChamps_Stage()">
+        <sub id="message_nom_etudiant"></sub>
+        <br>
+    <label> Nom du tuteur d'entreprise : </label>
+    <input id="nom_tuteur" name="nom_tuteur" onblur="VerifierChamps_Stage()">
+        <sub id="message_nom_tuteur"></sub>
+        <br>
+    <label> Nom de l'entreprise : </label>
+    <input id="nom_entreprise" name="nom_entreprise" onblur="VerifierChamps_Stage()">
+        <sub id="message_nom_entreprise"></sub>
+        <br>
+
+    </div>
+<button id="valider" type="submit"> Valider </button>
+    </form>
+</body>
+</html>

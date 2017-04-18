@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label>Ajouter un Groupe : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Groupe_Add.php">
+    <div id="formulaire">
+    <label> Nom du groupe : </label>
+    <input id="nom_groupe"  name="nom_groupe" onblur="VerifierChamps_Groupe()">
+        <sub id="message_nom_groupe"></sub>
+        <br>
+    <label> Nombre d'étudiant : </label>
+    <input id="nombre_etudiant" name="nombre_etudiant" onblur="VerifierChamps_Groupe()">
+        <sub id="message_nombre_etudiant"></sub>
+        <br>
+    <label> Liées au semestre : </label>
+    <select id="semestre" name="semestre" onblur="VerifierChamps_Groupe()"><option> - </option>

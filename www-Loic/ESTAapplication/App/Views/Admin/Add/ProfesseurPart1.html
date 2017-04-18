@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+    <div>
+    <label> Ajouter un professeur : </label>
+        <br>
+    </div>
+    <form method="post" action="../../../App/Controller/Admin/Professeur_Add.php">
+    <div id="formulaire">
+    <label> Nom du professeur : </label>
+    <input id="nom_professeur" name="nom_professeur" onblur="VerifierChamps_Professeur()">
+        <sub id="message_nom_professeur"></sub>
+        <br>
+    <label> Prénom du professeur : </label>
+    <input id="prenom_professeur" name="prenom_professeur" onblur="VerifierChamps_Professeur()">
+        <sub id="message_prenom_professeur"></sub>
+        <br>
+    <label> Date de naissance du professeur : </label>
+    <input id="date_naissance_professeur" name="date_naissance_professeur" onblur="VerifierChamps_Professeur()">
+        <sub id="message_date_naissance_professeur"></sub>
+        <br>
+    <label> Matière enseigner : </label>
+    <input id="matiere_enseigner" name="matiere_enseigner" onblur="VerifierChamps_Professeur()">
+        <sub id="message_matiere_enseigner"></sub>
+        <br>
+    <label> Pole d'enseignement : </label>
+    <select id="pole_enseignement" name="pole_enseignement" onblur="VerifierChamps_Professeur()">
+        <option> - </option>
+
+

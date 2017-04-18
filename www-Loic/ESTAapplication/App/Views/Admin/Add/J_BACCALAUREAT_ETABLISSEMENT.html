@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../Assets/css/Add/Ancien_eleve.css"/>
+</head>
+<body>
+
+<div>
+    <label> Ajouter un semestre : </label>
+    <br>
+</div>
+<form method="post" action="../../../App/Controller/Admin/J_BACCALAUREAT_ETABLISSEMENT_Add.php">
+    <div id="formulaire">
+        <label> Baccalaureat : </label>
+        <input id="nom_baccalaureat"  name="nom_baccalaureat" onblur="VerifierChamps_BaccalaureatEtablissement()">
+        <sub id="message_nom_baccalaureat"></sub>
+        <br>
+        <label> Nom etablissement : </label>
+        <input id="nom_etablissement"  name="nom_etablissement" onblur="VerifierChamps_BaccalaureatEtablissement()">
+        <sub id="message_nom_etablissement"></sub>
+        <br>
+    </div>
+    <button id="valider" type="submit"> Valider </button>
+</form>
+</body>
+</html>
